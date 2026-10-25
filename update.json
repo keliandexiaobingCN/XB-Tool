@@ -1,0 +1,99 @@
+{
+  "app": {
+    "versionCode": 271,
+    "versionName": "2.7.1",
+    "url": "",
+    "sha256": "",
+    "notes": "示例：发布新版本时在这里填写 APK 直链与 SHA-256。"
+  },
+  "virusDb": {
+    "version": "2026.10.25",
+    "url": "",
+    "sha256": "",
+    "notes": "主源可填你自己的 JSON 特征库地址；mirrors 为备用源。",
+    "mirrors": [
+      {
+        "name": "公开哈希库（jsDelivr）",
+        "url": "https://fastly.jsdelivr.net/gh/sergelacombe/malware_sha256_hashes@main/malware_sha256_hashes.txt",
+        "format": "hash"
+      },
+      {
+        "name": "公开哈希库（GitHub）",
+        "url": "https://raw.githubusercontent.com/sergelacombe/malware_sha256_hashes/main/malware_sha256_hashes.txt",
+        "format": "hash"
+      }
+    ]
+  },
+  "announcements": [
+    {
+      "id": "xb-262",
+      "title": "XB工具 v2.7.0 发布",
+      "date": "2026-10-25",
+      "tag": "更新",
+      "important": true,
+      "content": "正式签名版；紧急救机增加总开关与权限引导；新增隔离区、全部应用手动处理、Root 完整性与残留检测；修复防广告关闭闪退与拦截率显示；新增浏览器与网络防护；病毒库更新支持镜像与离线回退。"
+    },
+    {
+      "id": "virus-db-source",
+      "title": "关于病毒库更新",
+      "date": "2026-10-25",
+      "tag": "说明",
+      "important": false,
+      "content": "病毒库支持 JSON 特征库和公开 SHA-256 哈希列表；更新成功后会同时保存本机副本，公共源不可用时继续使用最近一次的特征。火绒、360 等商业杀毒暂未提供公开特征库接口。"
+    },
+    {
+      "id": "author",
+      "title": "作者与反馈",
+      "date": "2026-10-25",
+      "tag": "公告",
+      "important": false,
+      "content": "作者：可怜的小兵。反馈邮箱：kelianxiaobingcn@vip.qq.com。关于页作者卡片和意见反馈已可直接进入作者页面。"
+    }
+  ],
+  "changelog": [
+    {
+      "version": "2.6.2",
+      "date": "2026-10-25",
+      "notes": [
+        "改用正式 Release 签名，移除悬浮窗权限与多余 BIND_VPN 声明",
+        "紧急救机总开关、通知/全屏权限引导，取消常驻小悬浮框",
+        "新增隔离区与拦截记录隔离操作",
+        "全部应用手动处理列表，系统应用不再默认标风险",
+        "Root 环境新增设备完整性与残留检测",
+        "新增浏览器、网络防护、作者与反馈页面",
+        "病毒库镜像回退与离线历史，防广告关闭闪退修复"
+      ]
+    },
+    {
+      "version": "2.6.1",
+      "date": "2026-10-25",
+      "notes": [
+        "公开哈希库镜像更新，修复 MalwareBazaar 405 提示",
+        "实时防护与保活说明拆分",
+        "设置项去重与通知按钮状态修复"
+      ]
+    },
+    {
+      "version": "2.6.0",
+      "date": "2026-10-25",
+      "notes": [
+        "猫咪应用图标、作者头像与反馈邮箱",
+        "动态背景视频、模糊与透明度",
+        "MP3（LAME）与 FLAC 编码",
+        "蓝奏云 / 123 云盘解析尝试",
+        "Shizuku / Root 深度缓存与运存清理",
+        "保活权限校验与双进程互拉"
+      ]
+    },
+    {
+      "version": "2.5.0",
+      "date": "2026-10-25",
+      "notes": [
+        "公告与在线更新框架",
+        "病毒库 JSON 更新与内置特征",
+        "普通/强力扫描与实时检测",
+        "Root 环境与内核检测、应用冻结、PDF 转换"
+      ]
+    }
+  ]
+}
