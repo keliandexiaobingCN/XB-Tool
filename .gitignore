@@ -1,0 +1,14 @@
+.gradle/
+build/
+app/build/
+demo-adb/build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+
+# 签名材料：绝不提交（公开仓库泄露 = 任何人可签发可覆盖安装的更新包）
+keystore.properties
+keystore/
+*.jks
+*.keystore

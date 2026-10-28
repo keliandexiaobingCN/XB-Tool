@@ -15,7 +15,33 @@
 
 ---
 
+## 界面预览
 
+| 首页 | ROOT 环境检测 | 内核与 Root 信息 |
+| --- | --- | --- |
+| ![首页](docs/screenshots/home.png) | ![Root](docs/screenshots/root.png) | ![内核](docs/screenshots/kernel.png) |
+
+| 扫描结果 | 权限提醒（双滑块） | 侧边栏 |
+| --- | --- | --- |
+| ![扫描](docs/screenshots/scan-result.png) | ![权限提醒](docs/screenshots/permission-dialog.png) | ![侧边栏](docs/screenshots/drawer.png) |
+
+| 设置 | 主题设置 | 更新与公告 |
+| --- | --- | --- |
+| ![设置](docs/screenshots/settings.png) | ![主题](docs/screenshots/theme.png) | ![公告](docs/screenshots/announcements.png) |
+
+| 防广告 | 紧急救机 | 二维码生成器 |
+| --- | --- | --- |
+| ![防广告](docs/screenshots/adblock.png) | ![紧急救机](docs/screenshots/emergency.png) | ![二维码](docs/screenshots/qrcode.png) |
+
+| 浏览器 | 网络防护 | 作者与反馈 |
+| --- | --- | --- |
+| ![浏览器](docs/screenshots/browser.png) | ![网络防护](docs/screenshots/network.png) | ![作者](docs/screenshots/author.png) |
+
+| 极致后台保活 | ADB 增强服务 | 版本历史 |
+| --- | --- | --- |
+| ![极致保活](docs/screenshots/keepalive.png) | ![无线调试](docs/screenshots/wireless-adb.png) | ![版本历史](docs/screenshots/version-history.png) |
+
+---
 
 ## 一、v1.3.7 新增
 
@@ -247,9 +273,18 @@ app/build/outputs/apk/debug/app-debug.apk
 app/build/outputs/apk/release/app-release.apk
 ```
 
-已提供 Release 安装包：[v1.3.7](https://github.com/keliandexiaobingCN/XB-Tool/releases/download/v1.3.7/XB-Tool-v1.3.7.apk)。
+已提供 Release 安装包：工作区根目录 `XB工具-v1.3.7.apk`。
 
 > Release 变体使用项目内 `keystore/xb-release.jks` 正式签名（RSA 2048），不再使用 Android Debug 证书；签名配置读取 `keystore.properties`。
+>
+> **仓库不含签名材料。** `keystore/`、`keystore.properties`、`*.jks` 都在 `.gitignore` 里——签名私钥一旦公开，任何人都能签发可覆盖安装的更新包。clone 后没有这两个文件时，`release` 变体会自动回退到 debug 证书，保证能直接构建；要做正式发布包，请自备 keystore 并按下面的格式建 `keystore.properties`：
+>
+> ```properties
+> storeFile=keystore/xb-release.jks
+> storePassword=你的密码
+> keyAlias=xbtool
+> keyPassword=你的密码
+> ```
 
 ---
 

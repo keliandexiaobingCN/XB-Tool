@@ -1,0 +1,38 @@
+{
+  "version": "2026.10.25",
+  "released": "2026-10-25",
+  "hashes": [],
+  "patterns": [],
+  "names": [
+    {
+      "pattern": "(?i)(trojan|ransomware|keylogger|spyware|fuckav|hacktool|keygen|malware|backdoor)",
+      "name": "Suspicious.FileName",
+      "severity": "MEDIUM",
+      "desc": "文件名命中可疑样本命名规则，可能为恶意或风险程序。"
+    },
+    {
+      "pattern": "(?i)(mod[ _-]?menu|injector|game[ _-]?guard[ _-]?bypass|cheat[ _-]?engine)",
+      "name": "Riskware.GameCheat",
+      "severity": "LOW",
+      "desc": "疑似游戏外挂 / 注入类风险程序。"
+    },
+    {
+      "pattern": "(?i)(lock[ _-]?(screen|phone|device)|kiosk|锁机|一键锁|锁屏|device[ _-]?admin)",
+      "name": "Riskware.LockScreen",
+      "severity": "HIGH",
+      "desc": "疑似锁机 / 设备管理器劫持类风险程序，可能导致屏幕被锁或无法退出。"
+    },
+    {
+      "pattern": "(?i)(adware|ad[ _-]?inject|popup[ _-]?ad|广告|弹窗|推广)",
+      "name": "Riskware.Adware",
+      "severity": "MEDIUM",
+      "desc": "疑似广告注入 / 弹窗推广类风险程序。"
+    },
+    {
+      "pattern": "(?i)(accessibility[ _-]?(service|abuse)|overlay[ _-]?lock|悬浮窗锁)",
+      "name": "Riskware.LockHeuristic",
+      "severity": "HIGH",
+      "desc": "疑似滥用无障碍 / 悬浮窗实现锁屏或覆盖界面的风险程序。"
+    }
+  ]
+}

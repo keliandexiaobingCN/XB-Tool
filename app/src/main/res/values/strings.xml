@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XB工具</string>
+    <string name="app_version">v1.3.7</string>
+    <string name="shizuku_provider">Shizuku</string>
+    <string name="accessibility_service_label">XB工具 紧急救机（音量键）</string>
+    <string name="accessibility_service_description">仅用于在任意界面监听音量键，连按指定次数后弹出紧急救援界面。不读取屏幕内容，不执行点击或手势操作。</string>
+</resources>

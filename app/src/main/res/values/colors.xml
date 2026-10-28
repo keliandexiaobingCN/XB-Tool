@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="xb_splash">#0C1513</color>
+    <color name="xb_icon_bg">#0C1513</color>
+    <color name="xb_icon_fg">#4DD0C0</color>
+    <color name="ic_launcher_background">#FAF9FD</color>
+</resources>

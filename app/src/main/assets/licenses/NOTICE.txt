@@ -1,0 +1,81 @@
+XB工具 第三方组件 NOTICE
+
+本产品使用了以下开源组件。各组件的版权与许可归其各自作者所有。
+
+================================================================
+1. AndroidX / Jetpack Compose
+   组件：androidx.core:core-ktx, androidx.activity:activity-compose,
+         androidx.lifecycle:lifecycle-runtime-compose,
+         androidx.compose.ui:ui, ui-graphics, ui-tooling-preview,
+         androidx.compose.material3:material3,
+         androidx.compose.material:material-icons-extended,
+         androidx.media3:media3-exoplayer, androidx.media3:media3-ui
+   版权：Copyright (C) The Android Open Source Project
+   许可：Apache License 2.0
+   全文：assets/licenses/Apache-2.0.txt
+
+================================================================
+2. Kotlin & Kotlin Coroutines
+   组件：org.jetbrains.kotlinx:kotlinx-coroutines-android
+   版权：Copyright 2016-2024 JetBrains s.r.o. and Kotlin Programming
+         Language contributors
+   许可：Apache License 2.0
+   全文：assets/licenses/Apache-2.0.txt
+
+================================================================
+3. OkHttp
+   组件：com.squareup.okhttp3:okhttp
+   版权：Copyright 2019 Square, Inc.
+   许可：Apache License 2.0
+   全文：assets/licenses/Apache-2.0.txt
+
+================================================================
+4. Shizuku API
+   组件：dev.rikka.shizuku:api, dev.rikka.shizuku:provider
+   版权：Copyright (C) RikkaApps
+   许可：Apache License 2.0
+   说明：本产品未修改 Shizuku API 源代码，通过公开 API 与其通信。
+   全文：assets/licenses/Apache-2.0.txt
+
+================================================================
+5. ZXing Core
+   组件：com.google.zxing:core
+   版权：Copyright (C) 2008 ZXing authors
+   许可：Apache License 2.0
+   全文：assets/licenses/Apache-2.0.txt
+
+================================================================
+6. LAME (android-lame)
+   组件：com.github.axet:lame
+   版权：Copyright (C) 1999-2011 The LAME Project
+         Android 封装部分 Copyright (C) axet
+   许可：GNU Lesser General Public License 2.1 (LGPL-2.1)
+   说明：以动态链接方式使用，未修改其源码。
+   全文：assets/licenses/LGPL-2.1.txt
+
+================================================================
+7. java-flac-encoder
+   组件：com.github.axet:java-flac-encoder
+   版权：Copyright (C) axet
+   许可：GNU Lesser General Public License 2.1 (LGPL-2.1)
+   全文：assets/licenses/LGPL-2.1.txt
+
+================================================================
+8. 公开恶意样本哈希数据
+   来源：sergelacombe/malware_sha256_hashes
+   许可：按其仓库声明使用
+   说明：仅内置 SHA-256 哈希值用于本地匹配，不包含样本本体。
+
+================================================================
+9. 广告/追踪域名规则
+   来源：公开 hosts / AdGuard 风格规则集
+   说明：规则数据由各规则集作者发布，按其各自许可使用。
+
+================================================================
+许可证全文位置
+   - Apache-2.0: assets/licenses/Apache-2.0.txt
+   - LGPL-2.1:   assets/licenses/LGPL-2.1.txt
+   - MPL-2.0:    assets/licenses/MPL-2.0.txt
+   应用内可在「关于 → 开源许可」查看上述全文。
+
+如对版权归属或许可有异议，请通过 kelianxiaobingcn@vip.qq.com 联系更正。
